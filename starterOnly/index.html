@@ -58,22 +58,27 @@
             <div class="formData">
               <label for="first">Prénom</label><br>
               <input class="text-control" type="text" id="first" name="first" /><br>
+              <span class="error-msg" id="firstname-error-msg">Veuillez entrer 2 caractères ou plus pour le champ du prénom.</span>
             </div>
             <div class="formData">
               <label for="last">Nom</label><br>
               <input class="text-control" type="text" id="last" name="last" /><br>
+              <span class="error-msg" id="lastname-error-msg">Veuillez entrer 2 caractères ou plus pour le champ du nom.</span>
             </div>
             <div class="formData">
               <label for="email">E-mail</label><br>
               <input class="text-control" type="email" id="email" name="email" /><br>
+              <span class="error-msg" id="email-error-msg">Votre mail est incorrect.</span>
             </div>
             <div class="formData">
               <label for="birthdate">Date de naissance</label><br>
               <input class="text-control" type="date" id="birthdate" name="birthdate" /><br>
+              <span class="error-msg" id="birthdate-error-msg">Vous devez entrer votre date de naissance.</span>
             </div>
             <div class="formData">
               <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
               <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99">
+              <span class="error-msg" id="contest-amount-error-msg">Veuillez entrer un nombre.</span>
             </div>
             <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
             <div class="formData">
@@ -101,6 +106,7 @@
               <label class="checkbox-label" for="location6">
                 <span class="checkbox-icon"></span>
                 Portland</label>
+                <span class="error-msg" id="select-contest-error-msg">Veuillez séléctionner un tournoi.</span>
             </div>
 
             <div class="formData">
@@ -109,6 +115,7 @@
                 <span class="checkbox-icon"></span>
                 J'ai lu et accepté les conditions d'utilisation.
               </label>
+              <span class="error-msg" id="cgu-error-msg">Veuillez accepter les cgu.</span>
               <br>
               <input class="checkbox-input" type="checkbox" id="checkbox-news" />
               <label class="checkbox2-label" for="checkbox-news">
