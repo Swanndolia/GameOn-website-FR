@@ -38,7 +38,6 @@ const errorMsgList = [...document.querySelectorAll('.error-msg')];
 let modalHeight = null;
 
 //modal informations are valids
-//the way we append error message take in account that we DON'T add new fields to the form or change their orders
 function modalsInformationAreValids(event) {
   //reset all element to block style
   errorMsgList.forEach(element => element.style.display = "none");
