@@ -303,7 +303,8 @@ input {
   transform: rotate(-45deg);
 }
 .btn-submit,
-.btn-signup {
+.btn-signup,
+.btn-close-confirm {
   background: #fe142f;
   display: block;
   margin: 0 auto;
@@ -456,6 +457,13 @@ input {
 }
 .invalid-input{
   display: none;
+}
+.thanks-signup{
+  margin-top: 60%;
+  align-self: center;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: lighter;
 }
 footer {
   padding-left: 2vw;
