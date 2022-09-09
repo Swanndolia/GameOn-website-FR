@@ -44,20 +44,20 @@ function modalsInformationAreValids(event) {
   errorMsgList.forEach(element => element.style.display = "none");
   //not really valid cause some special character are valids in locale part of email, this is more for demonstration cause recomendation are to just check for something like x@x.x 
   const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-  // if (firstName.value.length < 2)
-  //   firstNameError.style.display = "block";
-  // if (lastName.value.length < 2)
-  //   lastNameError.style.display = "block";
-  // if (!email.value.match(emailRegex))
-  //   emailError.style.display = "block";
-  // if (birthDate.value == "")
-  //   brithDateError.style.display = "block";
-  // if (isNaN(howManyConstest.value) || howManyConstest.value == "")
-  //   howManyConstestError.style.display = "block";
-  // if (!contestList.some(element => element.checked))
-  //   selectContestError.style.display = "block";
-  // if (!acceptCGU.checked)
-  //   acceptCguError.style.display = "block";
+  if (firstName.value.length < 2)
+    firstNameError.style.display = "block";
+  if (lastName.value.length < 2)
+    lastNameError.style.display = "block";
+  if (!email.value.match(emailRegex))
+    emailError.style.display = "block";
+  if (birthDate.value == "")
+    brithDateError.style.display = "block";
+  if (isNaN(howManyConstest.value) || howManyConstest.value == "")
+    howManyConstestError.style.display = "block";
+  if (!contestList.some(element => element.checked))
+    selectContestError.style.display = "block";
+  if (!acceptCGU.checked)
+    acceptCguError.style.display = "block";
   if (errorMsgList.some(element => window.getComputedStyle(element).display === "block"))
     event.preventDefault();
   else 
