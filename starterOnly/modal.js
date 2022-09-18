@@ -64,7 +64,6 @@ function modalsInformationAreValids(event) {
 }
 
 function confirmInscription() {
-  confirmInscription,
   modalBody.style.height = modalHeight.toString() + "px";
   modalBody.style.display = "flex";
   modalBody.style.flexDirection = "column";
